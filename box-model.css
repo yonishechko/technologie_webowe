@@ -1,0 +1,33 @@
+span {
+    color: red;
+}
+
+div {
+    background: grey;
+}
+
+#block-model {
+    width: 200px;
+    height: 200px;
+    background: lightseagreen;
+    padding: 20px;
+    /* lub
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    
+    góra-dół
+    
+    padding: 15px 30px;
+    
+    kolejność: góra, prawo, dół, lewo
+    
+    padding: 20 px 30 px 10 px 50 px*/
+    border: 1px solid black;
+    border-bottom: 2px rgba (237, 248, 174, 0.52);
+    border-bottom-width: 10px;
+    /* kolejność: szerokość, styl, kolor
+    style: solid, dotter, dashed */
+    margin: 30px;
+}
