@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    color: #30373b;
+}
+a{
+    color: #30373b;
+}
+main{
+    width: 1140px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    font-weight: bold;
+    padding: 6px 24px;
+    margin: 6px;
+    border-radius: 3px;
+}
+nav a.active{
+    background: #ffc000;
+    color: white;
+}
+nav a:hover{
+    background: #646d72;
+}
+#logo{
+    width: 131px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}

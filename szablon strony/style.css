@@ -20,13 +20,13 @@ nav a {
 }
 section {
     display: flex;
-    height: 500px;
+    min-height: 500px;
 }
 aside {
     width: 150px;
     /* height: 500px; */
     background: hotpink;
-    align-items: flex-start
+    align-items: flex-start;
 }
 #right-panel {
     width: 150px;
@@ -37,6 +37,7 @@ article {
     width: 700px;
     background: lightseagreen;
     align-items: flex-start;
+    overflow: hidden;
 }
 footer {
     height: 150px;

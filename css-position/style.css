@@ -1,0 +1,44 @@
+body {
+    background: grey;
+    display: flex;
+    justify-content: center;
+}
+main {
+    background: lightblue;
+    width: 1000px;
+    height: 800px;
+}
+main div {
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+#a1{
+    background: lightseagreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#a2{
+    background: lightskyblue;
+    /* top: 100px;
+    left: 50px; */
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    z-index: 10;
+}
+#a3{
+    background: mediumaquamarine;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
+#a4{
+    background: mediumblue;
+    /* top: -10px;
+    left: -20px; */
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
