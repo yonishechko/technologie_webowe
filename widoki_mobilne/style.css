@@ -87,7 +87,7 @@ footer{
 footer h3{
     font-weight: 700;
 }
-@media (min-width: 500px){
+@media (min-width: 500px) and (max-width: 799px){
     main{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 160px auto;
@@ -96,5 +96,15 @@ footer h3{
     "news-blocks logo"
     "news-blocks nav"
     "footer footer"
+    }
+}
+@media (min-width: 800px){
+    main{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 160px auto;
+        grid-template-areas:
+        "date date date"
+        "news-blocks logo logo"
+        "news-blocks nav footer"
     }
 }
