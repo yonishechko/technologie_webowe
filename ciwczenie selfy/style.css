@@ -3,11 +3,13 @@ body{
     justify-content: center;
     color: #30373b;
     font-family: Roboto, sans-serif;
+    background: #f3f4f5;
 }
 #background{
     background: url(assets/masthead@2x.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-color: #a5adb0;
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
@@ -27,6 +29,9 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 60px 0 45px;
+    border-bottom: 1px solid #cad2d7;
+    }
+header .home{
     border-bottom: #cad2d7 1px solid;
 }
 nav{
@@ -54,20 +59,33 @@ nav a:hover{
 #head{
     color: white;
     margin-top: 200px;
-    width: 741px;
+    margin-bottom: 190px;
+    width: 740px;
 }   
 h1{
-    font-size: 96px;
+    font-size: 66px;
     font-family: 'Roboto' sans-serif;
     font-weight: 900;
     margin: 25px 0 15px;
 }
+h1#home{
+    font-size: 96px;
+    color: white;
+}
+h1#home::after{
+    content: unset;
+}
 h2{
-    font-size: 28px;
+    font-weight: 400;
+    font-size: 24px;
     font-family: Aleo, serif;
     font-style: italic;
-    color: #e2e2e0;
-    font-weight: 400;
+    color:#3c4a52;
+    width: 870px;
+}
+h2.home{
+    color: #e2e2e2;
+    font-size: 28px;
 }
 .spaceballs{
 font-size: 24px;
@@ -80,7 +98,77 @@ font-weight: 900;
 #head a:hover{
     color: #ffc000;
 }
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+.info div{
+    width: 30%;
+    margin-right: 5%;
+
+}
+.info h3{
+    margin: 15px 0 18px;
+    font-size: 36px;
+    position: relative;
+}
+.info h3::after, h1::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #ffc000;
+    display: inline-block;
+    margin-left: 6px;
+}
+p{
+    color: #656a6f;
+    line-height: 24px;
+}
+.info a{
+    font-weight: 700;
+    font-family: Arial;
+}
+.info a::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #ffc000;
+    display: inline-block;
+    margin-right: 6px;
+}
 footer{
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #9fa6aa;
+    padding: 50px 0;
+    align-items: center;
+    margin-top: 65px;
+}
+.copy{
+    display: flex;
+    align-items: center;
+    color: #9fa6aa;
+}
+.copy img{
+    height: 19px;
+    margin-right: 10px;
+}
+.social img{
+    height: 31px;
+    opacity: 0.4;
+}
+.social img:hover{
+    opacity: 0.6;
+}
+img#about{
+    width: 100%;
+    margin-top: 65px;
+    border: solid 6px white;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.about-txt div{
+    width: 45%;
 }
